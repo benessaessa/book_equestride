@@ -252,6 +252,12 @@ a {
 
 @media screen and (max-width:700px) {
     .presentation-area {
-        width: 65%;
+        width: 100%;
+    }
+    .rightBtn{
+        right: 1rem;
+    }
+    .leftBtn{
+        left: 1rem;
     }
 }
