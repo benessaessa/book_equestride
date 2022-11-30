@@ -151,7 +151,7 @@ a {
 }
 
 .navigation .btn {
-    background: #464646;
+    background: #46464669;
     color: #ffffff;
     border-radius: 50%;
     opacity: 0;
@@ -259,5 +259,8 @@ a {
     }
     .leftBtn{
         left: 1rem;
+    }
+    .presentation-area .counter {
+        left:46%;
     }
 }
