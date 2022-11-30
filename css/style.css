@@ -36,7 +36,7 @@ a {
 }
 
 .presentation-area {
-    width: 500px;
+    width: 550px;
     height: 100%;
     position: relative;
     background: purple;
@@ -53,7 +53,7 @@ a {
 
 .absolute_section {
     position: absolute;
-    color: white;
+    color: black;
     top: 1rem;
 }
 
@@ -71,7 +71,6 @@ a {
     right: 0;
     left: 0;
     text-align: center;
-    color: white;
     position: absolute;
     bottom: 4rem;
 }
@@ -81,7 +80,7 @@ a {
     bottom: 1rem;
     left: 14rem;
     background-color: white;
-    color: #b6b6b6;
+    color: #000000;
 }
 
 /* .presentation-area .navigation {
@@ -131,8 +130,10 @@ a {
 
 /* End full screen mode */
 .bg_image {
-    background: url('../images/logo.png');
+    background: url(../images/logo.png) no-repeat;
     height: 100%;
+    background-size: cover;
+    background-position: top, bottom;
     /* overflow: hidden; */
 }
 
@@ -238,10 +239,13 @@ a {
 .slide.show {
     overflow: auto;
     opacity: 1;
+    border-left: 25px solid green;
     transform: scale(1);
     visibility: visible;
 }
-
+.slide:first-child{
+    border-left: 0 !important;
+}
 .slide .heading {
     padding: 2rem;
     background: purple;
@@ -262,5 +266,12 @@ a {
     }
     .presentation-area .counter {
         left:46%;
+    }
+    .slide.show {
+        overflow: auto;
+        opacity: 1;
+        border-left: 10px solid green !important;
+        transform: scale(1);
+        visibility: visible;
     }
 }
